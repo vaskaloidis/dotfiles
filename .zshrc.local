@@ -1,0 +1,16 @@
+echo 'Loading .zshrc.local'
+
+export EDITOR='subl'
+
+[[ -f ~/.aliases ]] && source ~/.aliases
+
+export PATH="$(brew --prefix qt@5.5)/bin:$PATH"
+export PATH=$HOME/.npm-global/bin:$PATH
+export PATH=$HOME/.homebrew/bin:$PATH
+export PATH="/opt/metasploit-framework/bin:$PATH"
+export PATH=$PATH:/usr/local/opt/go/libexec/bin
+
+export PATH="$PATH:/opt/metasploit-framework/bin/"
+export PATH="$PATH:$HOME/Code/Shell/"
+
+export PATH="$PATH:$HOME/.rvm/bin"
