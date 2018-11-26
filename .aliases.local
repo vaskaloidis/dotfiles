@@ -1,6 +1,8 @@
 # sudo docker create --name kali-root -v /home/$(whoami)/kali kalilinux/kali-linux-docker
 
-alias l='l -lrh'
+alias installed='doing done -s Apps'
+#alias l='l -lrh'
+alias l='ls -lra'
 alias c='cd'
 alias p='pwd'
 alias r='rails'
@@ -19,15 +21,12 @@ alias de='docker exec'
 alias dr='docker run -it'
 
 alias rubydir='~/Code/Ruby'
-alias codedir='~/Code'
-alias cdb='cd ~/Code/Bash'
-alias cdr='cd ~/Code/Ruby'
-alias cdra='cd ~/Code/Rails'
 alias gohome='cd ~/'
 alias goruby='cd ~/Code/Ruby'
 alias gocode='cd ~/Code'
-alias gobash="cd ~/Code/Bash"
+alias goshell="cd ~/Code/Shell"
 alias alert='terminal-notifier'
 
 alias kali='sudo docker run -it --rm -v /tmp/docker/kali:/tmp -v /Users/vasilioskaloidis/kratos/docker/kali/resources/tools:/root/tools -v /Users/vasilioskaloidis/~/.msf4:/root/.msf4 kratos/kali:1.0'
 
+alias b='buku --suggest'

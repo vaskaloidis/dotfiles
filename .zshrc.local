@@ -1,8 +1,6 @@
 echo 'Loading .zshrc.local'
 
-export EDITOR='subl'
-
-[[ -f ~/.aliases ]] && source ~/.aliases
+export EDITOR='subl -a'
 
 export PATH="$(brew --prefix qt@5.5)/bin:$PATH"
 export PATH=$HOME/.npm-global/bin:$PATH
@@ -12,5 +10,13 @@ export PATH=$PATH:/usr/local/opt/go/libexec/bin
 
 export PATH="$PATH:/opt/metasploit-framework/bin/"
 export PATH="$PATH:$HOME/Code/Shell/"
-
+export GOPATH=$HOME/go
 export PATH="$PATH:$HOME/.rvm/bin"
+
+[[ -s "$HOME/.local/share/marker/marker.sh" ]] && source "$HOME/.local/share/marker/marker.sh"
+
+eval $(thefuck --alias) 
+# You can use whatever you want as an alias, like for Mondays: 
+eval $(thefuck --alias FUCK)
+
+[ -f $GOPATH/src/github.com/tokozedg/sman/sman.rc  ] && source $GOPATH/src/github.com/tokozedg/sman/sman.rc
