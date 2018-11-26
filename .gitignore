@@ -1,4 +1,5 @@
-*
-!.zshrc.local
-!.aliases.local
+!~/.zshrc
+!~/.shuttle.json
+!~/.zshrc.local
+!~/.aliases.local
 !.gitignore
